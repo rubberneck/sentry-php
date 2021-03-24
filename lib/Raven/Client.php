@@ -952,7 +952,7 @@ class Raven_Client
     {
         // attempt to sanitize any user provided data
         if (!empty($data['request'])) {
-            $data['request'] = $this->serializer->serialize($data['request'], 5);
+            $data['request'] = $this->serializer->serialize($data['request'], 10);
         }
         if (!empty($data['user'])) {
             $data['user'] = $this->serializer->serialize($data['user'], 3);
